@@ -1,11 +1,13 @@
 package org._jd.factory;
 
+import org._jd.factory.products.Garlic;
 import org._jd.factory.products.Product;
 
-public class ProductFactory extends Factory {
+public class GarlicFactory extends Factory {
 
     @Override
     protected Product FactoryMethod() {
-        return null;
+        cnt++;
+        return new Garlic("garlic", cnt);
     }
 }
